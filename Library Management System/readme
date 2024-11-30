@@ -1,0 +1,48 @@
+Entity (Main Actors)
+    Member
+    Librarian
+    System
+    
+Use Cases
+    1) SearchBook -> SearchBookByAuthor, SearchBookByTitle, SearchBookByPublication
+    2) IssueBookItem(), reIssueBookItem()
+    3) addBookItem(), removeBookItem(), modifyBookItem()
+    4) registerAccount(), pauseMembership(), blockMembership()
+    5) payFine()
+
+Main Classes :
+    Book
+    bookId
+    bookName
+    bookAuthor
+    publicationName
+
+    BookItem extends Book
+    barcode
+    bookStatus
+    borrowedDate
+    dueDate
+    issuedBy
+    checkout()
+
+    Member
+    memberid
+    dateOfMembership
+    totalBookIssued
+    getTotalBooksIssued()
+
+    Catalog 
+    totalNoOfBooks (contains list of books sorted on basis of author/title/subject/publishdate)
+    Map<String, List<BookItem>> bookTitles;
+    Map<String, List<BookItem>> bookAuthors;
+    Map<String, List<BookItem>> bookSubjects;
+    
+    Notification
+    sendNotification()
+
+    Fine
+    amount
+    
+
+
+
