@@ -1,0 +1,11 @@
+1) View Product/Category
+2) Add Product to Category
+3) Place Order
+4) Payment Checkout
+
+Objects : User, Product, Cart, Order, Invoice, Payment, Inventory, Warehouse
+
+Customer Lands on the Shopping system web page ->
+Customer searches for a Product ->  (Search by name, search by category) ->
+if productFound -> View Product -> Add item to the shopping cart -> view shopping cart -> Modify/Delete/Proceed -> Checkout
+
